@@ -1,0 +1,170 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+This is where arabic numbering starts
+\end_layout
+
+\begin_layout Standard
+In this thesis we consider the work of Gauss 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Neumann2005"
+
+\end_inset
+
+ and Hilbert 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hilbert1893"
+
+\end_inset
+
+ on the subject of the title.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Click Insert->Citation to insert a bibliography reference; use 
+\begin_inset Quotes eld
+\end_inset
+
+Text after
+\begin_inset Quotes erd
+\end_inset
+
+ field to point to the exact location (e.g.
+ Chapter 2, p.33, Theorem 7) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Gauss's work
+\end_layout
+
+\begin_layout Standard
+We will discuss Gauss's work in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter-on-Gauss"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+Use Insert->Label
+\family default
+ to insert a label 
+\family sans
+and Insert->Cross-Reference
+\family default
+ to refer to the labelled item.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Hilbert's work
+\end_layout
+
+\begin_layout Standard
+We will discuss Hilbert's work in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter-on-Hilbert"
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

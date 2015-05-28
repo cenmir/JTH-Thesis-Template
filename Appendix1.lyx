@@ -1,0 +1,296 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Appendix 1: Lyx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Appendix 1: Lyx}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+LyX (together with MikTeX) can be downloaded from www.lyx.org.
+ After you install LyX, the first thing you need to do is to click Help
+ and read Tutorial.
+ You will not be able to use LyX without that.
+ Some hints: 
+\end_layout
+
+\begin_layout Itemize
+Press Ctrl-R to make and view pdf.
+ 
+\end_layout
+
+\begin_layout Itemize
+LyX is based on the principle that 
+\begin_inset Quotes eld
+\end_inset
+
+What You See Is What You 
+\emph on
+Mean
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ You type what you mean, and LyX will take care of typesetting it for you,
+ so that the output looks nice.
+ A 
+\family sans
+Return
+\family default
+ grammatically separates paragraphs, and a 
+\family sans
+Space
+\family default
+ grammatically separates words.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family sans
+Environment
+\family default
+ choice box is located on the left end of the toolbar (the choice box below
+ 
+\family sans
+
+\begin_inset Quotes eld
+\end_inset
+
+File Edit View
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+).
+ It indicates in which environment you are currently writing.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Standard
+\begin_inset Quotes erd
+\end_inset
+
+ is the default environment for text.
+ Use 
+\begin_inset Quotes eld
+\end_inset
+
+Theorem
+\begin_inset Quotes erd
+\end_inset
+
+ to write statement of a theorem, 
+\begin_inset Quotes eld
+\end_inset
+
+Proof
+\begin_inset Quotes erd
+\end_inset
+
+ for proof, etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+Use 
+\family sans
+Insert\SpecialChar \menuseparator
+Label
+\family default
+ to label your theorems and 
+\family sans
+Insert\SpecialChar \menuseparator
+Cross
+\begin_inset space ~
+\end_inset
+
+Reference
+\family default
+ to insert a reference to a particular theorem.
+ The theorems, lemmas, definitions, etc will be numbered automatically.
+ Use 
+\family sans
+Insert\SpecialChar \menuseparator
+Citation
+\family default
+ to refer to an item in the Bibliography.
+ Use Ctrl-M to enter Maths mode and 
+\family sans
+Space
+\family default
+ (or 
+\family sans
+Esc)
+\family default
+ to leave the formula.
+ Use the arrow keys to navigate inside the formula.
+ Use _ to enter indices (subscripts) and ^ for superscripts.
+ You can also use LaTeX commands in Maths mode (e.g.
+ 
+\backslash
+sqrt, 
+\backslash
+sin, 
+\backslash
+cup, etc).
+\end_layout
+
+\begin_layout Itemize
+Use Ctrl-L to enter LaTeX code directly in the text if necessary (it will
+ appear in a red box).
+ 
+\end_layout
+
+\begin_layout Standard
+Example of a simple math formula: 
+\begin_inset Formula $a^{2}+b^{3}=\sin x+\sqrt{\alpha}$
+\end_inset
+
+; and with Maths Macros defined above: 
+\begin_inset Formula $F=\dlim F_{\alpha}$
+\end_inset
+
+; 
+\begin_inset Formula $K=\Ker\varphi$
+\end_inset
+
+; 
+\begin_inset Formula $\myint ab{x^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Displayed math formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\Gamma_{n}x^{n}\ge\int_{a}^{b}\left(\frac{\gamma\cdot\omega(y)}{\lim_{x\to0}f(x)}\right)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and a numbered one:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a^{2}+b^{2}=c^{2}\label{eq:pythagoras}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Use Insert-> Cross Reference to insert a reference to it.
+ Equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pythagoras"
+
+\end_inset
+
+) is widely known.
+\end_layout
+
+\end_body
+\end_document
