@@ -11,11 +11,23 @@
 
 \usepackage{scrlayer-scrpage}
 
-\lohead[John Doe]
-{John Doe}
-\rohead[Page style with \KOMAScript]
-{Page style with \KOMAScript}
+
+
+%\lohead[Left Odd Chapter pages]{Left Odd}
+%\rohead[Right Odd Chapter pages]{Right Odd}
+
+%\lehead[Left Even Chapter pages]{Left Even}
+%\rehead[Right Even Chapter pages]{Right Even}
+
+%\setkomafont{pageheadfoot}{\small}
+%\setkomafont{pagehead}{\bfseries}
+
 \pagestyle{scrheadings}
+\clearscrheadfoot
+\ohead{\headmark}
+\ofoot[\pagemark]{\pagemark}
+%\automark[chapter]{chapter}
+%\automark*[section]{}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -87,9 +99,9 @@ tabs-within-sections
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 15mm
+\leftmargin 30mm
 \topmargin 30mm
-\rightmargin 30mm
+\rightmargin 15mm
 \bottommargin 30mm
 \secnumdepth 2
 \tocdepth 2
@@ -180,6 +192,13 @@ Titlepage
 LatexCommand input
 filename "titlepage1.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 

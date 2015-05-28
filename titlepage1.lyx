@@ -5,6 +5,9 @@
 \textclass scrbook
 \begin_preamble
 \usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{calc}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -78,22 +81,6 @@ status open
 
 \begin_layout Plain Layout
 
-%
-\backslash
-pagenumbering{gobble}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 
 \backslash
 begin{titlepage}
@@ -121,7 +108,554 @@ newgeometry{left=3cm,right=3cm,top=2cm,bottom=2cm}
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 8pheight%*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+thesisTitle}{
+\backslash
+textbf{PUT THE TITLE OF THE THESIS HERE 
+\backslash
+
+\backslash
+ WITH A SECOND LINE IF IT IS VERY LONG}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+department}{
+\backslash
+textit{Department of Product Development}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+thesisAuthor}{CANDIDATE'S FULL NAME}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+thesisDate}{2015}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+thesisDegree}{LICENTIATE THESIS}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+thesisLogo}{
+\backslash
+includegraphics[width=0.25
+\backslash
+paperwidth]{Graphics/schoolLogo}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+footerInfo}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+department
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+SCHOOL OF ENGINEERING, JÖNKÖPING UNIVERSITY
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Jönköping, Sweden 
+\backslash
+thesisDate
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+computeTitlePageSpacing}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+titleHeight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settoheight{
+\backslash
+titleHeight}{
+\backslash
+vbox{
+\backslash
+thesisTitle}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+footerHeight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settoheight{
+\backslash
+footerHeight}{
+\backslash
+vbox{
+\backslash
+footerInfo}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+authorHeight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settoheight{
+\backslash
+authorHeight}{
+\backslash
+vbox{
+\backslash
+thesisAuthor}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+degreeHeight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settoheight{
+\backslash
+degreeHeight}{
+\backslash
+vbox{
+\backslash
+thesisDegree}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+logoHeight} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settoheight{
+\backslash
+logoHeight}{
+\backslash
+vbox{
+\backslash
+thesisLogo}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the degree is: 
+\backslash
+the
+\backslash
+degreeHeight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the title is: 
+\backslash
+the
+\backslash
+titleHeight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the author is: 
+\backslash
+the
+\backslash
+authorHeight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the logo is: 
+\backslash
+the
+\backslash
+logoHeight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the footer is: 
+\backslash
+the
+\backslash
+footerHeight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of all the text is: 
+\backslash
+the
+\backslash
+textheight 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%  Now to compute the free vertical space 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+freeVertSpaceTot} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+freeVertSpaceTot}{
+\backslash
+textheight 
+\end_layout
+
+\begin_layout Plain Layout
+
+							- 
+\backslash
+degreeHeight
+\end_layout
+
+\begin_layout Plain Layout
+
+							- 
+\backslash
+titleHeight
+\end_layout
+
+\begin_layout Plain Layout
+
+							- 
+\backslash
+authorHeight
+\end_layout
+
+\begin_layout Plain Layout
+
+							- 
+\backslash
+logoHeight
+\end_layout
+
+\begin_layout Plain Layout
+
+							- 
+\backslash
+footerHeight
+\end_layout
+
+\begin_layout Plain Layout
+
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+freeVertSpace}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+freeVertSpace}{0.7
+\backslash
+freeVertSpaceTot}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+%The height of the total free vertical space is: 
+\backslash
+the
+\backslash
+freeVertSpace 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+computeTitlePageSpacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+the
+\backslash
+textheight
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+the
+\backslash
+freeVertSpace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Title page starts
+\end_layout
+
 \end_inset
 
 
@@ -129,11 +663,22 @@ newgeometry{left=3cm,right=3cm,top=2cm,bottom=2cm}
 
 \begin_layout Standard
 \align center
-LICENTIATE THESIS
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{0.15
+\backslash
+textheight plus 0.5
+\backslash
+textheight minus 0.1
+\backslash
+textheight }
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 5pheight%*
 \end_inset
 
 
@@ -141,22 +686,71 @@ LICENTIATE THESIS
 
 \begin_layout Standard
 \align center
+\begin_inset ERT
+status open
 
-\series bold
-\size large
-PUT THE TITLE OF THE THESIS HERE
+\begin_layout Plain Layout
+
+
+\backslash
+thesisDegree
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
+\begin_inset ERT
+status open
 
-\series bold
-\size large
-WITH A SECOND LINE IF IT IS VERY LONG 
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.05
+\backslash
+textheight}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 5pheight%
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesisTitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.05
+\backslash
+textheight}
+\end_layout
+
 \end_inset
 
 
@@ -166,11 +760,16 @@ WITH A SECOND LINE IF IT IS VERY LONG
 \paragraph_spacing single
 \noindent
 \align center
-CANDIDATE'S FULL NAME
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesisAuthor
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace 20pheight%
 \end_inset
 
 
@@ -178,14 +777,35 @@ CANDIDATE'S FULL NAME
 
 \begin_layout Standard
 \align center
-\begin_inset Graphics
-	filename Graphics/schoolLogo.eps
-	height 10pheight%
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.15
+\backslash
+textheight}
+\end_layout
 
 \end_inset
 
 
-\begin_inset VSpace 8pheight%
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesisLogo
+\end_layout
+
 \end_inset
 
 
@@ -193,19 +813,55 @@ CANDIDATE'S FULL NAME
 
 \begin_layout Standard
 \align center
+\begin_inset ERT
+status open
 
-\shape italic
-Department of Product Development
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.15
+\backslash
+textheight plus 0.5
+\backslash
+textheight minus 0.15
+\backslash
+textheight}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
-SCHOOL OF ENGINEERING, JÖNKÖPING UNIVERSITY
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footerInfo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\align center
-Jönköping, Sweden 2015
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+End of title page
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

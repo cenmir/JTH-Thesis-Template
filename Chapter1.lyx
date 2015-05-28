@@ -146,6 +146,22 @@ reference "Gauss'sTheorem"
 Gauss's youthful work
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1-30]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Gauss's mature work
 \end_layout
@@ -158,7 +174,7 @@ status open
 
 
 \backslash
-lipsum[1-30]
+lipsum[31-60]
 \end_layout
 
 \end_inset
