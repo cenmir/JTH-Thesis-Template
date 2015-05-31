@@ -1,0 +1,215 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[11pt,twoside,english]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=30mm,bmargin=30mm,lmargin=30mm,rmargin=15mm}
+\pagestyle{empty}
+\usepackage{color}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{esint}
+\setstretch{1.3}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+\DeclareRobustCommand*{\lyxarrow}{%
+\@ifstar
+{\leavevmode\,$\triangleleft$\,\allowbreak}
+{\leavevmode\,$\triangleright$\,\allowbreak}}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}[chapter]
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\usepackage{geometry}
+\usepackage{changepage}
+\usepackage{txfonts}
+\usepackage{scrlayer-scrpage}
+\usepackage{jththesis} %Changes the Koma script style, adds commands
+\usepackage{varprop} %Enables to set variables with properties, used for supplements
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\theoremstyle{plain}
+\ifx\thechapter\undefined
+\newtheorem{thm}{\protect\theoremname}
+\else
+\newtheorem{thm}{\protect\theoremname}[chapter]
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{lipsum}
+
+\makeatother
+
+\usepackage{listings}
+\providecommand{\theoremname}{Theorem}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+\definecolor{gray1}{RGB}{235, 235, 235} 
+\definecolor{gray2}{RGB}{60, 60, 60}
+
+\input{marginsMain.tex}
+
+
+
+\input{titlepage1.tex}
+
+\cleardoublepage{}
+
+\pagenumbering{roman} 
+
+
+\chapter*{Abstract}
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+\noindent \input{Abstract.tex}
+
+
+\chapter*{Acknowledgements}
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\noindent \input{Acknowledgements.tex}
+
+\begin{comment}
+Dedication
+
+The dedication is usually quite short, and is a personal rather than
+an academic recognition. The dedication should not be listed in the
+table of contents. The chapter header is optional.
+\end{comment}
+
+
+\cleardoublepage{} % Comment if using header
+% \chapter*{Dedication} % The clear double page is not needed if you use chapter*
+
+\noindent \begin{center}
+The dedication is usually quite short, and is a personal rather than
+an academic recognition. The dedication should not be listed in the
+table of contents. The chapter header is optional.
+\par\end{center}
+
+
+\chapter*{Statement of Co-Authorship}
+
+\addcontentsline{toc}{chapter}{Statement of Co-Authorship}
+
+\noindent \input{\string"Statement of Co-Authorship.tex\string"}
+
+\noindent %
+\begin{comment}
+
+\chapter*{Declaration}
+
+\addcontentsline{toc}{chapter}{Declaration}
+
+All sentences or passages quoted in this project dissertation from
+other people's work have been specifically acknowledged by clear cross
+referencing to author, work and page(s). I understand that failure
+to do this amounts to plagiarism and will be considered grounds for
+failure in this module and the degree examination as a whole.
+
+\bigskip{}
+
+
+\noindent Name: 
+
+\bigskip{}
+
+
+\noindent Signed: 
+
+\bigskip{}
+
+
+\noindent Date: 
+\end{comment}
+
+
+
+\chapter*{Supplements}
+
+\addcontentsline{toc}{chapter}{Supplements}
+
+\noindent \input{SupplementsChapter.tex}
+
+\tableofcontents{}
+
+
+
+
+
+\global\long\def\bbR{\mathbb{R}}
+ 
+
+\global\long\def\ccR{\mathcal{R}}
+ 
+
+\global\long\def\dlim{\operatorname{\underrightarrow{{\rm lim}}}}
+
+
+\global\long\def\Ker{\operatorname{\rm Ker}}
+ 
+
+\global\long\def\End{\operatorname{\rm End}}
+ 
+
+\global\long\def\myint#1#2#3{\int_{#1}^{#2}\sin#3dx}
+ 
+
+
+\chapter*{Introduction}
+
+\addcontentsline{toc}{chapter}{Introduction}
+
+\vspace{-1.2cm}
+
+
+\noindent \pagenumbering{arabic} 
+
+\noindent \input{Introduction.tex}
+
+\noindent 
+
+\noindent \input{Chapter1.tex}
+
+\noindent 
+
+\noindent \input{Chapter2.tex}
+
+\noindent 
+
+\noindent \input{Chapter3.tex}
+
+\noindent 
+
+\noindent \input{Appendix1.tex}
+
+\bibliographystyle{plain}
+\phantomsection\addcontentsline{toc}{chapter}{\bibname}\bibliography{library}
+
+
+\noindent 
+
+\noindent \input{\string"Appended papers.tex\string"}
+\end{document}

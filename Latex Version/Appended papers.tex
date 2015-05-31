@@ -1,0 +1,30 @@
+\input{Supplements.tex}
+
+\newcommand{\addPaper}[2]{%
+\medskip{}
+\noindent \begin{minipage}[t]{0.25\textwidth}% 
+\textbf{#1}% 
+\end{minipage}%
+\begin{minipage}[t]{0.75\textwidth}%
+#2% 
+\end{minipage}
+
+\vspace{8mm}
+}
+
+
+\chapter*{Appended Papers}
+
+\addcontentsline{toc}{chapter}{Appended Papers}
+
+\addPaper
+{Supplement I}
+{\getproperty{Suplement1}{title}}
+
+\addPaper
+{Supplement II}
+{\getproperty{Suplement2}{title}}
+
+\addPaper
+{Supplement III}
+{\getproperty{Suplement3}{title}}

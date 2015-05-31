@@ -1,0 +1,19 @@
+
+\chapter{Algorithms}
+
+This is the third chapter.
+
+Exampel algorithm:
+
+\begin{algorithm}[h]
+\begin{lstlisting}[language=Matlab,numbers=left,numberstyle={\footnotesize},basicstyle={\ttfamily},breaklines=true,keywordstyle={\color{blue}}]
+sq2=sqrt(2); knod=4; dof=3;
+X=[TO.XC,TO.YC,TO.ZC]; xnod=TO.XC; ynod=TO.YC; znod=TO.ZC; 
+nodes=TO.Connectivity; 
+surfh = [SO.Surface.surfh]; 
+nTetEle = size(nodes,1); 
+nTriEle = size(surfh,2);
+\end{lstlisting}
+\protect\caption{Some algorithm}
+\end{algorithm}
+

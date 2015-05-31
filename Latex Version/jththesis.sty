@@ -1,0 +1,58 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{jththesis}[2015/05/29 Custom Package]
+
+\RequirePackage{titlesec}
+\RequirePackage{geometry}
+\RequirePackage{changepage}
+\RequirePackage{txfonts}
+\RequirePackage{scrlayer-scrpage}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ohead{\headmark}
+\ofoot[\pagemark]{\pagemark}
+
+%\setkomafont{disposition}{\bfseries}
+
+\titleformat{\chapter}[block] %shape
+{\raggedleft{}\huge\sffamily\bfseries} % format
+{\thechapter} %label
+{0.5em} % sep
+{
+%\chaptertitlename~ %Prints 'Chapter'
+}% before code
+[
+\rule{\textwidth}{1pt}
+] %after code
+
+\titleformat{name=\chapter,numberless}[block] %shape
+{\raggedleft{}\huge\sffamily\bfseries} % format
+{} %label
+{0.5em} % sep
+{
+%\chaptertitlename~ %Prints 'Chapter'
+}% before code
+[
+\rule{\textwidth}{1pt}
+] %after code
+
+%% Below are commands specific for jth thesis
+\newcommand{\chapIntro}[1]{%
+	\vspace{-1.5em} 
+
+	\noindent  \textsf{\textbf{\large{}CHAPTER INTRODUCTION}}{\large \par} 
+
+	\vspace{0.2cm} 
+
+	\noindent #1
+
+	\vspace{0.5cm} 
+
+	\noindent \rule[0cm]{1\textwidth}{1pt} 
+}
+
+
+
+
+
+\endinput

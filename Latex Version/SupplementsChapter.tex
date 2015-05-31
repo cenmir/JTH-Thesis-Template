@@ -1,0 +1,34 @@
+\input{Supplements.tex}
+
+\newcommand{\newSupplementFormat}[3]{%
+\medskip{}
+\noindent \rule[0.5ex]{1\columnwidth}{0.5pt}
+\noindent \begin{minipage}[t]{0.25\textwidth}% 
+\textbf{#1}% 
+\end{minipage}%
+\begin{minipage}[t]{0.75\textwidth}%
+#2% 
+\end{minipage}
+
+\noindent \medskip{}
+
+\noindent \textit{\scriptsize{}#3}{\scriptsize \par}
+\vspace{8mm}
+}
+
+\noindent The following supplements constitute the basis of this thesis.
+
+\newSupplementFormat
+{Supplement I}
+{\getproperty{Suplement1}{title}}
+{\getproperty{Suplement1}{footer}}
+
+\newSupplementFormat
+{Supplement II}
+{\getproperty{Suplement2}{title}}
+{\getproperty{Suplement2}{footer}}
+
+\newSupplementFormat
+{Supplement III}
+{\getproperty{Suplement3}{title}}
+{\getproperty{Suplement3}{footer}}

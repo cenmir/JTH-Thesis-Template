@@ -1,0 +1,53 @@
+
+\chapter*{Appendix 1: Lyx}
+
+\addcontentsline{toc}{chapter}{Appendix 1: Lyx} 
+
+\LyX{} (together with Mik\TeX{}) can be downloaded from www.lyx.org.
+After you install \LyX{}, the first thing you need to do is to click
+Help and read Tutorial. You will not be able to use \LyX{} without
+that. Some hints: 
+\begin{itemize}
+\item Press Ctrl-R to make and view pdf. 
+\item \LyX{} is based on the principle that ``What You See Is What You
+\emph{Mean}.'' You type what you mean, and \LyX{} will take care
+of typesetting it for you, so that the output looks nice. A \textsf{Return}
+grammatically separates paragraphs, and a \textsf{Space} grammatically
+separates words.
+\item The \textsf{Environment} choice box is located on the left end of
+the toolbar (the choice box below \textsf{``File Edit View}'').
+It indicates in which environment you are currently writing. ``Standard''
+is the default environment for text. Use ``Theorem'' to write statement
+of a theorem, ``Proof'' for proof, etc. 
+\item Use \textsf{Insert\lyxarrow{}Label} to label your theorems and \textsf{Insert\lyxarrow{}Cross~Reference}
+to insert a reference to a particular theorem. The theorems, lemmas,
+definitions, etc will be numbered automatically. Use \textsf{Insert\lyxarrow{}Citation}
+to refer to an item in the Bibliography. Use Ctrl-M to enter Maths
+mode and \textsf{Space} (or \textsf{Esc)} to leave the formula. Use
+the arrow keys to navigate inside the formula. Use \_ to enter indices
+(subscripts) and \textasciicircum{} for superscripts. You can also
+use \LaTeX{} commands in Maths mode (e.g. \textbackslash{}sqrt, \textbackslash{}sin,
+\textbackslash{}cup, etc).
+\item Use Ctrl-L to enter \LaTeX{} code directly in the text if necessary
+(it will appear in a red box). 
+\end{itemize}
+Example of a simple math formula: $a^{2}+b^{3}=\sin x+\sqrt{\alpha}$;
+and with Maths Macros defined above: $F=\dlim F_{\alpha}$; $K=\Ker\varphi$;
+$\myint ab{x^{2}}$.
+
+Displayed math formula:
+
+\[
+\sum_{n=0}^{\infty}\Gamma_{n}x^{n}\ge\int_{a}^{b}\left(\frac{\gamma\cdot\omega(y)}{\lim_{x\to0}f(x)}\right)dy
+\]
+
+
+and a numbered one:
+
+\begin{equation}
+a^{2}+b^{2}=c^{2}\label{eq:pythagoras}
+\end{equation}
+
+
+Use Insert-> Cross Reference to insert a reference to it. Equation
+(\ref{eq:pythagoras}) is widely known.
