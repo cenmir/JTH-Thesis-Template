@@ -4,6 +4,8 @@ It is a [Lyx 2.1](http://www.lyx.org/) template based on the KOMA-book class.
 Lyx is a easy to use graphical front end to [Latex](http://www.latex-project.org/).
 Since Lyx uses Latex in the background, the template (and everything created with it) can easily be exported to Latex from Lyx.
 
+This template is loosely based on the [university of Leicester lyx template](http://www2.le.ac.uk/departments/mathematics/extranet/staff-material/staff-profiles/ab155/lyx) 
+
 ## Contents
 - main.lyx - The main file, generate the full document using this file.
 - titlepage1.lyx - Contains the title page. 
