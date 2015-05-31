@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass scrbook
+\textclass jththesis
 \begin_preamble
 \usepackage{lipsum}
 \end_preamble

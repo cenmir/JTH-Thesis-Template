@@ -1,0 +1,111 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[scrbook]{JTH Thesis}
+#  \DeclareCategory{Thesis}
+# KOMA scrbook textclass definition file.
+# Bernd Rellermeyer <100.41728@germanynet.de>, 1998/7/11.
+
+Format 49
+Input scrclass.inc
+Input numreport.inc
+
+AddToPreamble
+	\usepackage{geometry}
+	\usepackage{changepage}
+	\usepackage{txfonts}
+	\usepackage{scrlayer-scrpage}
+	\usepackage{jththesis} %Changes the Koma script style, adds commands
+	\usepackage{varprop} %Enables to set variables with properties, used for supplements
+EndPreamble
+
+Style Chapter
+	LabelType             Static
+	LabelSep              xxx
+	Margin                Dynamic
+	Align                 Right
+	Font
+	  Family              Sans
+	  Size                Largest
+	EndFont
+End
+
+Style ChapterIntro
+	LatexType Command
+	LatexName chapIntro
+   
+	Category Sectioning
+	Align  Left
+	Font
+		Family Sans
+		Series Bold
+		Size Large
+	EndFont
+End
+
+Style SetVariableProperty
+	Margin		Dynamic
+	LatexType	Command
+	LatexName	setproperty
+	
+	Argument 1
+		Mandatory	1
+		LabelString	"Variable Name:"
+		Tooltip	"Variable Name"
+		Font
+			Series	Bold
+		EndFont
+	EndArgument
+	
+	Argument 2
+		Mandatory	1
+		LabelString	"Property Name:"
+		Tooltip	"Property Name"
+	EndArgument
+	
+	Argument 3
+		Mandatory	1
+		LabelString	"Property Value:"
+		Tooltip	"Property Value"
+		Font
+			Shape	Italic
+		EndFont
+	EndArgument
+	
+	ParSkip		0.4
+	Align		Block
+	LabelSep	xx
+	LabelType	Static
+	LabelString	"New Variable Structure:"
+	LabelFont
+	Color		Blue
+	EndFont
+End
+
+Style GetVariableProperty
+	Margin		Dynamic
+	LatexType	Command
+	LatexName	getproperty
+	
+	Argument 1
+		Mandatory	1
+		LabelString	"Variable Name:"
+		Tooltip	"Variable Name"
+		Font
+			Series	Bold
+		EndFont
+	EndArgument
+	
+	Argument 2
+		Mandatory	1
+		LabelString	"Property Name:"
+		Tooltip	"Property Name"
+	EndArgument
+
+	ParSkip		0.4
+	Align		Block
+	LabelSep	xx
+	LabelType	Static
+	LabelString	"Get Property:"
+	LabelFont
+	Color		Blue
+	EndFont
+End

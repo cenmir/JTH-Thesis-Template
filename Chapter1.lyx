@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass scrbook
+\textclass jththesis
 \begin_preamble
 \usepackage{lipsum}
 \end_preamble
@@ -59,6 +59,11 @@ theorems-ams
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch Chapter1References
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -82,6 +87,22 @@ theorems-ams
 
 \begin_layout Chapter
 Results of Gauss
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapIntro{Intro to chapter 1}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -183,7 +204,7 @@ lipsum[31-60]
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch ChildOnly
+\begin_inset Branch Chapter1References
 status collapsed
 
 \begin_layout Standard

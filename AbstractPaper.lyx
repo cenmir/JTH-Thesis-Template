@@ -2,10 +2,11 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass scrbook
+\textclass jththesis
 \begin_preamble
 \usepackage{lipsum}
 \usepackage{tabularx}
+\usepackage{geometry}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -81,28 +82,18 @@ status open
 
 
 \backslash
-begin{titlepage}
+newgeometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "titlepage.lyx"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{titlepage}
-\end_layout
+filename "titlepage1.lyx"
 
 \end_inset
 

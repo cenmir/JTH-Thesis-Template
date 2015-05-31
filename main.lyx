@@ -2,32 +2,9 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass scrbook
+\textclass jththesis
 \begin_preamble
-\usepackage{geometry}
-\usepackage{changepage}
 \usepackage{lipsum}
-\usepackage{txfonts}
-
-\usepackage{scrlayer-scrpage}
-
-
-
-%\lohead[Left Odd Chapter pages]{Left Odd}
-%\rohead[Right Odd Chapter pages]{Right Odd}
-
-%\lehead[Left Even Chapter pages]{Left Even}
-%\rehead[Right Even Chapter pages]{Right Even}
-
-%\setkomafont{pageheadfoot}{\small}
-%\setkomafont{pagehead}{\bfseries}
-
-\pagestyle{scrheadings}
-\clearscrheadfoot
-\ohead{\headmark}
-\ofoot[\pagemark]{\pagemark}
-%\automark[chapter]{chapter}
-%\automark*[section]{}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -90,7 +67,7 @@ tabs-within-sections
 \suppress_date false
 \justification true
 \use_refstyle 0
-\branch ChildOnly
+\branch SingleTitlePageMargins
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -128,7 +105,7 @@ status open
 
 
 \backslash
-definecolor{gray1}{RGB}{235, 235, 235}
+definecolor{gray1}{RGB}{235, 235, 235} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -144,30 +121,9 @@ definecolor{gray2}{RGB}{60, 60, 60}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setkomafont{disposition}{
-\backslash
-bfseries}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "marginsMain.lyx"
 
 \end_inset
 
@@ -214,6 +170,259 @@ status open
 \backslash
 pagenumbering{roman} 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Abstract}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand input
+filename "Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Acknowledgements}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "Acknowledgements.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Dedication
+\end_layout
+
+\begin_layout Plain Layout
+The dedication is usually quite short, and is a personal rather than an
+ academic recognition.
+ The dedication should not be listed in the table of contents.
+ The chapter header is optional.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage{} % Comment if using header
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+chapter*{Dedication} % The clear double page is not needed if you use chapter*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+The dedication is usually quite short, and is a personal rather than an
+ academic recognition.
+ The dedication should not be listed in the table of contents.
+ The chapter header is optional.
+\end_layout
+
+\begin_layout Chapter*
+Statement of Co-Authorship
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Statement of Co-Authorship}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand input
+filename "Statement of Co-Authorship.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Chapter*
+Declaration
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Declaration}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+All sentences or passages quoted in this project dissertation from other
+ people's work have been specifically acknowledged by clear cross referencing
+ to author, work and page(s).
+ I understand that failure to do this amounts to plagiarism and will be
+ considered grounds for failure in this module and the degree examination
+ as a whole.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Name: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Signed: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Date: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Supplements
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Supplements}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "SupplementsChapter.lyx"
 
 \end_inset
 
@@ -346,203 +555,6 @@ Example of a math macro with 3 parameters
 \end_layout
 
 \begin_layout Chapter*
-Acknowledgements
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{Acknowledgements}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset CommandInset include
-LatexCommand input
-preview true
-filename "Acknowledgements.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter*
-Dedication
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Dedication should not be listed in the table of contents.
- The chapter header is optional
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Dedication.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter*
-Statement of Co-Authorship
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{Statement of Co-Authorship}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset CommandInset include
-LatexCommand input
-filename "Statement of Co-Authorship.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Chapter*
-Declaration
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{Declaration}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-All sentences or passages quoted in this project dissertation from other
- people's work have been specifically acknowledged by clear cross referencing
- to author, work and page(s).
- I understand that failure to do this amounts to plagiarism and will be
- considered grounds for failure in this module and the degree examination
- as a whole.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-Name: 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-Signed: 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-Date: 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter*
-Abstract
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{Abstract}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset CommandInset include
-LatexCommand input
-filename "Abstract.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter*
 Introduction
 \end_layout
 
@@ -557,6 +569,13 @@ status open
 addcontentsline{toc}{chapter}{Introduction}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -1.2cm
 \end_inset
 
 
@@ -705,6 +724,31 @@ filename "Appendix1.lyx"
 LatexCommand bibtex
 bibfiles "library"
 options "bibtotoc,plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Appended Papers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appended papers.lyx"
 
 \end_inset
 

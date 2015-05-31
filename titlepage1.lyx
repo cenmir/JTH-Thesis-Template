@@ -2,12 +2,12 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass scrbook
+\textclass jththesis
 \begin_preamble
-\usepackage{geometry}
-\usepackage{graphicx}
-\usepackage{epstopdf}
-\usepackage{calc}
+%\usepackage{geometry}
+%\usepackage{graphicx}
+%\usepackage{epstopdf}
+%\usepackage{calc}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -54,6 +54,11 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\branch SingleTitlePageMargins
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -76,8 +81,43 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Branch SingleTitlePageMargins
+status open
+
+\begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{ a4paper, top=30mm, bottom=30mm, inner=30mm, outer=30mm }
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Activate if you want to print this page only
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -92,163 +132,9 @@ begin{titlepage}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newgeometry{left=3cm,right=3cm,top=2cm,bottom=2cm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-thesisTitle}{
-\backslash
-textbf{PUT THE TITLE OF THE THESIS HERE 
-\backslash
-
-\backslash
- WITH A SECOND LINE IF IT IS VERY LONG}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-department}{
-\backslash
-textit{Department of Product Development}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-thesisAuthor}{CANDIDATE'S FULL NAME}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-thesisDate}{2015}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-thesisDegree}{LICENTIATE THESIS}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-thesisLogo}{
-\backslash
-includegraphics[width=0.25
-\backslash
-paperwidth]{Graphics/schoolLogo}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-footerInfo}{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-department
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-SCHOOL OF ENGINEERING, JÖNKÖPING UNIVERSITY
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Jönköping, Sweden 
-\backslash
-thesisDate
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Title page starts
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -270,25 +156,15 @@ textheight }
 
 \begin_layout Standard
 \align center
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-thesisDegree
-\end_layout
-
-\end_inset
-
-
+\family sans
+LICENTIATE THESIS
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -305,26 +181,20 @@ textheight}
 \end_layout
 
 \begin_layout Standard
+\paragraph_spacing other 1.4
+\noindent
 \align center
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-thesisTitle
-\end_layout
-
-\end_inset
-
-
+\family sans
+\series bold
+\size huge
+PUT THE TITLE OF THE THESIS HERE WITH A SECOND LINE IF IT IS VERY LONG
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -344,25 +214,15 @@ textheight}
 \paragraph_spacing single
 \noindent
 \align center
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-thesisAuthor
-\end_layout
-
-\end_inset
-
-
+\family sans
+CANDIDATE'S FULL NAME
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -380,15 +240,9 @@ textheight}
 
 \begin_layout Standard
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thesisLogo
-\end_layout
+\begin_inset Graphics
+	filename Graphics/newSchoolLogo.eps
+	width 40page%
 
 \end_inset
 
@@ -398,17 +252,17 @@ thesisLogo
 \begin_layout Standard
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-vspace{0.15
+vspace{0.50
 \backslash
 textheight plus 0.5
 \backslash
-textheight minus 0.15
+textheight minus 0.50
 \backslash
 textheight}
 \end_layout
@@ -420,14 +274,31 @@ textheight}
 
 \begin_layout Standard
 \align center
+
+\family sans
+\shape italic
+Department of Product Development
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+SCHOOL OF ENGINEERING, JÖNKÖPING UNIVERSITY
+\begin_inset Newline newline
+\end_inset
+
+Jönköping, Sweden 2015
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-footerInfo
+end{titlepage}
 \end_layout
 
 \end_inset
@@ -436,17 +307,8 @@ footerInfo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-End of title page
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_inset Branch SingleTitlePageMargins
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -462,17 +324,6 @@ restoregeometry
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{titlepage}
 \end_layout
 
 \end_inset
