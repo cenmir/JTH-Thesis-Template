@@ -11,7 +11,7 @@ Input numreport.inc
 AddToPreamble
 	\usepackage{geometry}
 	\usepackage{changepage}
-	\usepackage{txfonts}
+	%\usepackage{txfonts}
 	\usepackage{scrlayer-scrpage}
 	\usepackage{jththesis} %Changes the Koma script style, adds commands
 	\usepackage{varprop} %Enables to set variables with properties, used for supplements

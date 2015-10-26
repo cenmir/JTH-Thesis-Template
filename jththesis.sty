@@ -4,52 +4,103 @@
 \RequirePackage{titlesec}
 \RequirePackage{geometry}
 \RequirePackage{changepage}
-\RequirePackage{txfonts}
+%\RequirePackage{txfonts}
 \RequirePackage{scrlayer-scrpage}
+\RequirePackage{mathptmx}
 
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \ohead{\headmark}
 \ofoot[\pagemark]{\pagemark}
 
-%\setkomafont{disposition}{\bfseries}
+\newif\iftimes
+\timestrue
+%\timesfalse
 
-\titleformat{\chapter}[block] %shape
-{\raggedleft{}\huge\sffamily\bfseries} % format
-{\thechapter} %label
-{0.5em} % sep
-{
-%\chaptertitlename~ %Prints 'Chapter'
-}% before code
-[
-\rule{\textwidth}{1pt}
-] %after code
+\iftimes
+	\setkomafont{disposition}{\bfseries} %Changes the disposition font to Times
+\fi
 
-\titleformat{name=\chapter,numberless}[block] %shape
-{\raggedleft{}\huge\sffamily\bfseries} % format
-{} %label
-{0.5em} % sep
-{
-%\chaptertitlename~ %Prints 'Chapter'
-}% before code
-[
-\rule{\textwidth}{1pt}
-] %after code
+\iftimes
+	\titleformat{\chapter}[block] %shape
+	{\raggedleft{}\huge\bfseries} % Times Bold
+	{\thechapter} %label
+	{0.5em} % sep
+	{
+	%\chaptertitlename~ %Prints 'Chapter'
+	}% before code
+	[
+	\rule{\textwidth}{1pt}
+	] %after code
+\else
+	\titleformat{\chapter}[block] %shape
+	{\raggedleft{}\huge\sffamily\bfseries} % SansSerif Bold
+	{\thechapter} %label
+	{0.5em} % sep
+	{
+	%\chaptertitlename~ %Prints 'Chapter'
+	}% before code
+	[
+	\rule{\textwidth}{1pt}
+	] %after code
+\fi
+
+\iftimes
+	\titleformat{name=\chapter,numberless}[block] %shape
+	{\raggedleft{}\huge\bfseries} % Times Bold
+	{} %label
+	{0.5em} % sep
+	{
+	%\chaptertitlename~ %Prints 'Chapter'
+	}% before code
+	[
+	\rule{\textwidth}{1pt}
+	] %after code
+\else
+	\titleformat{name=\chapter,numberless}[block] %shape
+	{\raggedleft{}\huge\sffamily\bfseries} % SansSerif Bold
+	{} %label
+	{0.5em} % sep
+	{
+	%\chaptertitlename~ %Prints 'Chapter'
+	}% before code
+	[
+	\rule{\textwidth}{1pt}
+	] %after code
+\fi
+
 
 %% Below are commands specific for jth thesis
-\newcommand{\chapIntro}[1]{%
-	\vspace{-1.5em} 
 
-	\noindent  \textsf{\textbf{\large{}CHAPTER INTRODUCTION}}{\large \par} 
+\iftimes
+	\newcommand{\chapIntro}[1]{%
+		\vspace{-2em} 
 
-	\vspace{0.2cm} 
+		\noindent  \textbf{\large{}CHAPTER INTRODUCTION}{\large \par} %Times
 
-	\noindent #1
+		\vspace{0.2cm} 
 
-	\vspace{0.5cm} 
+		\noindent #1
 
-	\noindent \rule[0cm]{1\textwidth}{1pt} 
-}
+		\vspace{0.5cm} 
+
+		\noindent \rule[0cm]{1\textwidth}{1pt} 
+	}
+\else
+	\newcommand{\chapIntro}[1]{%
+		\vspace{-2em} 
+
+		\noindent  \textsf{\textbf{\large{}CHAPTER INTRODUCTION}}{\large \par} %SansSerif 
+
+		\vspace{0.2cm} 
+
+		\noindent #1
+
+		\vspace{0.5cm} 
+
+		\noindent \rule[0cm]{1\textwidth}{1pt} 
+	}
+\fi
 
 
 

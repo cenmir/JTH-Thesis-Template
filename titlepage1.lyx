@@ -117,7 +117,7 @@ Activate if you want to print this page only
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -132,23 +132,7 @@ begin{titlepage}
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace*{0.15
-\backslash
-textheight plus 0.5
-\backslash
-textheight minus 0.1
-\backslash
-textheight }
-\end_layout
-
+\begin_inset VSpace 5theight%*
 \end_inset
 
 
@@ -162,19 +146,7 @@ LICENTIATE THESIS
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{0.05
-\backslash
-textheight}
-\end_layout
-
+\begin_inset VSpace 5theight%
 \end_inset
 
 
@@ -188,23 +160,11 @@ textheight}
 \family sans
 \series bold
 \size huge
-PUT THE TITLE OF THE THESIS HERE WITH A SECOND LINE IF IT IS VERY LONG
+Finite element methods on surfaces
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{0.05
-\backslash
-textheight}
-\end_layout
-
+\begin_inset VSpace 5theight%
 \end_inset
 
 
@@ -216,23 +176,11 @@ textheight}
 \align center
 
 \family sans
-CANDIDATE'S FULL NAME
+Mirza Cenanovic
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{0.15
-\backslash
-textheight}
-\end_layout
-
+\begin_inset VSpace 15theight%
 \end_inset
 
 
@@ -241,7 +189,7 @@ textheight}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Graphics/newSchoolLogo.eps
+	filename graphics/newSchoolLogo.eps
 	width 40page%
 
 \end_inset
@@ -250,23 +198,7 @@ textheight}
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{0.50
-\backslash
-textheight plus 0.5
-\backslash
-textheight minus 0.50
-\backslash
-textheight}
-\end_layout
-
+\begin_inset VSpace 20theight%
 \end_inset
 
 
@@ -292,7 +224,7 @@ Jönköping, Sweden 2015
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -308,7 +240,7 @@ end{titlepage}
 
 \begin_layout Standard
 \begin_inset Branch SingleTitlePageMargins
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
